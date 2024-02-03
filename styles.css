@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+    height: 100vh;
+    min-height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 3rem 0;
+}
+.producto{
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    height: 150vw;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.foto-producto{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+#desktop{
+    display: none;
+}
+#mobile{
+    width: 100%;
+}
+.descripcion-producto{
+    height: 60%;
+    margin: 1rem 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#perfume{
+    color: hsl(228, 12%, 48%, 0.8);
+    font-weight: 500;
+    font-size: 3.5vw;
+    margin-bottom: 5px;
+    margin: 0;
+    font-family: Montserrat;
+}
+.descripcion-producto h1{
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 7.5vw;
+    margin: 0;
+    font-family: Fraunces;
+}
+#descripcion{
+    color: hsl(228, 12%, 48%, 0.7);
+    margin: 10px 0 0 0;
+    line-height: 5vw;
+    font-size: 3.5vw;
+    font-family: Montserrat;
+}
+.precio{
+    color: hsl(158, 36%, 37%);
+    font-size: 4.5vw;
+    margin-bottom: -10px;
+    gap: 1.2rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: Fraunces;
+}
+.precio h1{
+    margin: 0;
+}
+.precio p{
+    color: hsl(228, 12%, 48%, 0.7);
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin: 0;
+    font-family: montserrat;
+    text-decoration: line-through;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    gap: .5rem;
+    border-radius: 7px;
+    height: 12vw;
+    margin:0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .1s;
+}
+button p{
+    color: hsl(0,0%,100%);
+    font-size: 3.5vw;
+    font-family: Montserrat;
+}
+button:active{
+    background-color: hsl(158, 36%, 37%, 0.5);
+}
+@media(min-width: 530px){
+    .producto{
+        width: 70vw;
+        min-width: 500px;
+        max-width: 700px;
+        height: 50vw;
+        min-height: 400px;
+        max-height: 550px;
+        flex-direction: row;
+        justify-content: start;
+        overflow: hidden;
+    }
+    .foto-producto{
+        width: 52%;
+        height: 100%;
+    }
+    #desktop{
+        display: flex;
+        width: 100%;
+    }
+    #mobile{
+        display: none;
+    }
+    .descripcion-producto{
+        width: 40%;
+        height: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    #perfume{
+        font-size: 1.5vw;
+        margin-bottom: 5px;
+        height: 10%;
+        margin: 0;
+    }
+    .descripcion-producto h1{
+        font-size: 3vw;
+        width: 85%;
+        height: 30%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    #descripcion{
+        line-height: 150%;
+        font-size: 1.8vw;
+        width: 100%;
+        height: 32%;
+        overflow: hidden;
+    }
+    .precio{
+        font-size: 2vw;
+    }
+    .precio h1{
+        margin: 0;
+    }
+    .precio p{
+        font-size: 1.8vw;
+    }
+    button{
+        height: 3rem;
+    }
+    button p{
+        font-size: 14px;
+    }
+}
+@media(min-width: 1001px){
+    .foto-producto{
+        width: 52%;
+        height: 100%;
+    }
+    #perfume{
+        font-size: 1.5vh;
+        margin-bottom: 5px;
+    }
+    .descripcion-producto h1{
+        font-size: 35px;
+        overflow: hidden;
+    }
+    #descripcion{
+        font-size: 16px;
+    }
+    .precio{
+        font-size: 28px;
+    }
+    .precio p{
+        font-size: 16px;
+    }
+    button{
+        height: 4rem;
+    }
+    button p{
+        font-size: 18px;
+    }
+}
